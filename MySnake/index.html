@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simran</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <h1>Snake Game</h1>
+    <canvas id="game-board" width="400" height="400"></canvas>
+    <div id="score-container">
+        <div id="score">Score: 0</div>
+        <div id="high-score">High Score: 0</div>
+    </div>
+
+    <div id="controls">
+        <button id="start-btn">Start Game</button>
+        <button id="reset-btn">Reset Game</button>
+        <button class="reset" onclick="resetHighScore()">Reset High Score</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
