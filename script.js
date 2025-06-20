@@ -149,6 +149,19 @@ document.getElementById("high-score").textContent = `High Score: ${highScore}`;
             startBtn.textContent = "Start Game";
             draw(); // Draw initial state
         });
+// Block mobile and tablet devices
+  window.onload = function () {
+    if (window.innerWidth < 1024) { // threshold can be adjusted (e.g., 768 or 1024 px)
+      document.body.innerHTML = `
+        <div style="display: flex; height: 100vh; align-items: center; justify-content: center; text-align: center; font-family: sans-serif;">
+          <div>
+            <h1>Access Denied</h1>
+            <p>This website is only accessible on desktop/laptop devices.</p>
+          </div>
+        </div>
+      `;
+    }
+  };
         
         // Draw initial state
         initGame();
