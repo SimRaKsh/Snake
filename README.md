@@ -44,7 +44,7 @@ Snake-Game/
 1. Clone the repository:
 
    ```bash
-   git clone (https://github.com/SimRaKsh/Snake.git)
+   git clone https://github.com/SimRaKsh/Snake.git
    ```
 
 2. Navigate to the project directory:
@@ -94,7 +94,7 @@ This project helped me practice and understand:
 - Managing game states such as Ready, Running, Paused, and Game Over.
 
 
-## 👩‍💻 Author
+## Author
 
 **Simran**
 
