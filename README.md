@@ -44,13 +44,13 @@ Snake-Game/
 1. Clone the repository:
 
    ```bash
-   git clone YOUR_REPOSITORY_URL
+   git clone (https://github.com/SimRaKsh/Snake.git)
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd Neon-Snake-Game
+   cd Snake-Game
    ```
 
 3. Open `index.html` in your web browser.
