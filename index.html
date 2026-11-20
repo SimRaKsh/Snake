@@ -1,24 +1,80 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simran Snake Game</title>
+    <title>SnakeGame</title>
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
 <body>
-    <h1>Snake Game</h1>
-    <canvas id="game-board" width="400" height="400"></canvas>
-    <div id="score-container">
-        <div id="score">Score: 0</div>
-        <div id="high-score">High Score: 0</div>
-    </div>
 
-    <div id="controls">
-        <button id="start-btn">Start Game</button>
-        <button id="reset-btn">Reset Game</button>
-        <button class="reset" onclick="resetHighScore()">Reset High Score</button>
-    </div>
+    <main class="game-container">
+
+        <header>
+            <h1>SNAKE</h1>
+        </header>
+        
+
+        <section class="score-container">
+            <div class="score-card">
+                <span>SCORE</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div class="score-card">
+                <span>HIGH SCORE</span>
+                <strong id="high-score">0</strong>
+            </div>
+        </section>
+
+        <div class="difficulty-container">
+            <label for="difficulty">LEVEL</label>
+            <select id="difficulty">e.
+                <option value="180">Easy</option>
+                <option value="120" selected>Medium</option>
+                <option value="75">Hard</option>
+            </select>
+        </div>
+        <p class="instructions">
+            Use arrow keys or WASD to move. Eat food and avoid walls!
+            <br>Space to pause the game.
+        </p>
+        <br>
+        <div class="board-container">
+
+            <canvas id="game-board"
+                    width="400"
+                    height="400">
+            </canvas>
+
+            <div id="game-overlay" class="game-overlay">
+                <p id="overlay-message">Ready to play?</p>
+                <button id="overlay-btn">START GAME</button>
+            </div>
+
+        </div>
+
+        <div class="controls">
+            <button id="start-btn">START GAME</button>
+            <button id="reset-btn">RESET</button>
+            <button id="high-reset-btn">RESET RECORD</button>
+        </div>
+
+        <div class="mobile-controls">
+            <button class="direction up" data-direction="UP">▲</button>
+            <div class="horizontal-controls">
+                <button data-direction="LEFT">◀</button>
+                <button data-direction="DOWN">▼</button>
+                <button data-direction="RIGHT">▶</button>
+            </div>
+        </div>
+
+        
+
+    </main>
+
     <script src="script.js"></script>
+
 </body>
 </html>
